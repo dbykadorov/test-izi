@@ -1,11 +1,11 @@
 import { TestBed } from '@angular/core/testing';
 import { App } from './app';
-import { TasksPage } from './features/tasks/tasks.page';
+import { TasksPageComponent } from './features/tasks/tasks-page.component';
 
 describe('App', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [App, TasksPage],
+      imports: [App, TasksPageComponent],
     }).compileComponents();
   });
 
