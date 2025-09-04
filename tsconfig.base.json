@@ -14,7 +14,11 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@izi/tasks/data-access": ["libs/tasks/src/index.ts"],
+      "@izi/shared/ui": ["libs/shared/ui/src/index.ts"],
+      "@izi/tasks/feature-list": ["libs/tasks/feature-list/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
