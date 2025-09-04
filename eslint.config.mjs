@@ -16,10 +16,16 @@ export default [
           enforceBuildableLibDependency: true,
           allow: ['^.*/eslint(\\.base)?\\.config\\.[cm]?[jt]s$'],
           depConstraints: [
-            {
-              sourceTag: '*',
-              onlyDependOnLibsWithTags: ['*'],
-            },
+            { sourceTag: 'type:feature', onlyDependOnLibsWithTags: ['type:ui','type:data-access','type:util','scope:shared'] },
+            { sourceTag: 'type:ui', onlyDependOnLibsWithTags: ['type:ui','type:util','scope:shared'] },
+            { sourceTag: 'type:data-access', onlyDependOnLibsWithTags: ['type:util','scope:shared'] },
+
+            { sourceTag: 'layer:interface', onlyDependOnLibsWithTags: ['layer:application','scope:shared'] },
+            { sourceTag: 'layer:application', onlyDependOnLibsWithTags: ['layer:domain','scope:shared'] },
+            { sourceTag: 'layer:infrastructure', onlyDependOnLibsWithTags: ['layer:application','scope:shared'] },
+            { sourceTag: 'layer:domain', onlyDependOnLibsWithTags: ['scope:shared'] },
+
+            { sourceTag: 'scope:shared', onlyDependOnLibsWithTags: ['scope:shared'] },
           ],
         },
       ],

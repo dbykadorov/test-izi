@@ -18,7 +18,7 @@
     "build": "nx run-many -t build --projects=web,api --parallel",
     "test": "nx run-many -t test --all --parallel",
     "lint": "nx run-many -t lint --all --parallel",
-    "prepare": "husky install"
+    "prepare": "husky"
   },
   "keywords": [],
   "author": "",
@@ -87,6 +87,7 @@
     "axios": "^1.6.0",
     "class-transformer": "^0.5.1",
     "class-validator": "^0.14.2",
+    "husky": "^9.1.7",
     "primeicons": "^7.0.0",
     "primeng": "^20.1.1",
     "reflect-metadata": "^0.1.13",

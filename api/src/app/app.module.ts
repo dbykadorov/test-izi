@@ -1,10 +1,10 @@
 import { Module } from '@nestjs/common';
 import { AppController } from './app.controller';
-import { TasksModule } from '../tasks/tasks.module';
+import { InterfaceModule } from '@izi/core/interface';
 
 @Module({
-	imports: [TasksModule],
-	controllers: [AppController],
-	providers: [],
+  imports: [InterfaceModule],
+  controllers: [AppController],
+  providers: [],
 })
 export class AppModule {}

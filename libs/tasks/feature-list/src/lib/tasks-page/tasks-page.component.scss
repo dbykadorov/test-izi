@@ -4,14 +4,20 @@
 
 .tasks__actions {
   display: flex;
-  gap: .5rem;
+  gap: 0.5rem;
   margin-bottom: 1rem;
   align-items: center;
 }
 
-.tasks__table-wrapper { min-width: 40rem; }
-.tasks__table thead th.tasks__col--checkbox { width: 3rem; }
-.tasks__table thead th.tasks__col--status { width: 8rem; }
-.tasks__table thead th.tasks__col--actions { width: 10rem; }
-
-
+.tasks__table-wrapper {
+  min-width: 40rem;
+}
+.tasks__table thead th.tasks__col--checkbox {
+  width: 3rem;
+}
+.tasks__table thead th.tasks__col--status {
+  width: 8rem;
+}
+.tasks__table thead th.tasks__col--actions {
+  width: 10rem;
+}

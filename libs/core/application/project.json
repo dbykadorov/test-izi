@@ -1,0 +1,22 @@
+{
+  "name": "application",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/core/application/src",
+  "projectType": "library",
+  "tags": ["layer:application","scope:shared"],
+  "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "dependsOn": ["^build"],
+      "options": {
+        "outputPath": "dist/libs/core/application",
+        "tsConfig": "libs/core/application/tsconfig.lib.json",
+        "packageJson": "libs/core/application/package.json",
+        "main": "libs/core/application/src/index.ts",
+        "assets": ["libs/core/application/*.md"],
+        "buildLibsFromSource": false
+      }
+    }
+  }
+}

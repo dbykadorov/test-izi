@@ -15,9 +15,13 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@izi/tasks/data-access": ["libs/tasks/src/index.ts"],
       "@izi/shared/ui": ["libs/shared/ui/src/index.ts"],
-      "@izi/tasks/feature-list": ["libs/tasks/feature-list/src/index.ts"]
+      "@izi/tasks/data-access": ["libs/tasks/src/index.ts"],
+      "@izi/tasks/feature-list": ["libs/tasks/feature-list/src/index.ts"],
+      "@izi/core/application": ["libs/core/application/src/index.ts"],
+      "@izi/core/domain": ["libs/core/src/index.ts"],
+      "@izi/core/infrastructure": ["libs/core/infrastructure/src/index.ts"],
+      "@izi/core/interface": ["libs/core/interface/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

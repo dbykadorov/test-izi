@@ -1,28 +1,31 @@
 <p-dialog
-	header="{{ header }}"
-	[modal]="true"
-	[closable]="true"
-	[draggable]="false"
-	[visible]="visible"
-	(visibleChange)="onVisibleChange($event)"
-	(onShow)="onOpen()"
+  header="{{ header }}"
+  [modal]="true"
+  [closable]="true"
+  [draggable]="false"
+  [visible]="visible"
+  (visibleChange)="onVisibleChange($event)"
+  (onShow)="onOpen()"
 >
-	<div class="dialog__form">
-		<label for="title">Название</label>
-		<input
-			id="title"
-			type="text"
-			pInputText
-			[placeholder]="placeholder"
-			[ngModel]="title()"
-			(ngModelChange)="title.set($event)"
-		/>
-	</div>
-	<ng-template pTemplate="footer">
-		<button pButton label="Отмена" [text]="true" (click)="onCancel()"></button>
-		<button pButton [label]="submitLabel" icon="pi pi-check" (click)="onSubmit()"
-		        [disabled]="!title().trim() || loading"></button>
-	</ng-template>
+  <div class="dialog__form">
+    <label for="title">Название</label>
+    <input
+      id="title"
+      type="text"
+      pInputText
+      [placeholder]="placeholder"
+      [ngModel]="title()"
+      (ngModelChange)="title.set($event)"
+    />
+  </div>
+  <ng-template pTemplate="footer">
+    <button pButton label="Отмена" [text]="true" (click)="onCancel()"></button>
+    <button
+      pButton
+      [label]="submitLabel"
+      icon="pi pi-check"
+      (click)="onSubmit()"
+      [disabled]="!title().trim() || loading"
+    ></button>
+  </ng-template>
 </p-dialog>
-
-
