@@ -1,0 +1,16 @@
+node_modules
+dist
+.nx/cache
+.git
+.gitignore
+npm-debug.log
+Dockerfile*
+docker-compose.yml
+**/.DS_Store
+**/coverage
+**/.env*
+**/.vscode
+**/tmp
+**/logs
+
+
