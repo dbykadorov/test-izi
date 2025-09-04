@@ -21,7 +21,10 @@
             "input": "web/public"
           }
         ],
-        "styles": ["web/src/styles.scss"]
+        "styles": [
+          "primeicons/primeicons.css",
+          "web/src/styles.scss"
+        ]
       },
       "configurations": {
         "production": {
@@ -55,7 +58,8 @@
           "buildTarget": "web:build:production"
         },
         "development": {
-          "buildTarget": "web:build:development"
+          "buildTarget": "web:build:development",
+          "proxyConfig": "web/proxy.conf.json"
         }
       },
       "defaultConfiguration": "development"
